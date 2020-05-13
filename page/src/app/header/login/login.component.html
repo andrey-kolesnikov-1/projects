@@ -1,0 +1,9 @@
+<div class="login">
+<p>{{text}}</p>
+<ng-template [ngIf]="flagLog">
+    <input type="text" [(ngModel)]="textValue"><br>
+    <button (click)="validation()">Вход</button>
+</ng-template>
+<button *ngIf="!flagLog" (click)="exitUser()">Выход</button>
+
+</div>

@@ -1,0 +1,15 @@
+.body {
+  position: relative;
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #9c1010;
+  border-radius: 10px;
+  background-color: #abeded;
+}
+
+.body:hover {
+  box-shadow: 7px -6px 5px 1px black;
+}
+
+

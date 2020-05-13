@@ -1,0 +1,15 @@
+.postDiv {
+  padding: 10px;
+  border: 1px dashed black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #abedb9;
+}
+
+.title {
+  margin-top: 0px;
+  color: #202001;
+}
+.text {
+  margin-bottom: 0px;
+}

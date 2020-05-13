@@ -1,0 +1,6 @@
+<hr>
+<div class="body">
+  <app-form (post)="setNewPost($event)" (flagDelete)="deletePost()"></app-form>
+  <hr>
+  <app-post *ngFor="let i of post" [text]="i.text" [title]="i.title"></app-post>
+</div>

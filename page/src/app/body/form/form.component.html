@@ -1,0 +1,7 @@
+<div>
+  <input #titleInput [(ngModel)]="title" class="text" type="text" placeholder="Заголовок">
+  <input #titleText [(ngModel)]="text" class="text" type="text" placeholder="Текст">
+  <button class="btn" (click)="newPost()">Опубликовать</button>
+  <button class="btnClr" (click)="clrInput()">Очистить</button>
+  <button class="btnDel" (click)="deletePost()">Удалить пост</button>
+</div>
