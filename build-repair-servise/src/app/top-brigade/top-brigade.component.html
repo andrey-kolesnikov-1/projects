@@ -1,0 +1,11 @@
+<div class="topBrigateDiv">
+    <h2>Лучшие бригады</h2>
+    <hr>
+    <app-list-top-brigade *ngFor="let i of brigade" 
+    [name]="i.name" 
+    [specification]="i.specification"
+    [rating]="i.rating"
+    ></app-list-top-brigade>
+
+
+</div>

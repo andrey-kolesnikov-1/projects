@@ -1,0 +1,15 @@
+.topBrigateDiv {
+    border: 1px solid black;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    background-color: rgb(221, 189, 179);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(32, 19, 2);
+}
+
+
+

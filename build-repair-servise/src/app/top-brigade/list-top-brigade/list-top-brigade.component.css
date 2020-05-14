@@ -1,0 +1,25 @@
+
+.listDiv {
+    border: 1px solid red;
+    margin: 0 0 10px 0;
+    background-color: rgb(150, 149, 149);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+}
+
+
+.setParamDiv {
+    flex-grow: 1;
+    min-height: 50px;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: rgb(132, 195, 214);
+}
+
+h3 {
+    margin-top: 0px;
+}
