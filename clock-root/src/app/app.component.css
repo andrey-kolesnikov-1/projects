@@ -1,0 +1,17 @@
+.root {
+    text-align: center;
+}
+
+.mainDiv {
+    position: relative;
+    margin-top: 100px;
+    width: 560px;
+    display: inline-block;
+    background-color: chartreuse;
+    box-shadow: 12px -8px 12px 4px #0b4218;
+    text-shadow: 8px -1px 4px black;
+    border-radius: 10px;
+}
+
+
+

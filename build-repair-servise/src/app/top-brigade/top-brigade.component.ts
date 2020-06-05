@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Brigade } from '../app.component';
+import {Component, OnInit, Input} from '@angular/core';
+import {Brigade} from '../interfaces/brigade';
+import {DataServiseService} from '../servises/data-servise.service';
 
 
 @Component({
@@ -11,24 +12,14 @@ export class TopBrigadeComponent implements OnInit {
 
   brigade: Brigade[] = [];
 
-  @Input()
-  set topBrigade(brigade: Brigade[]) {
-    if (brigade.length === 0) {
-      this.brigade.push({ name: 'Нет данных', specification: 'Нет данных', rating: 0, id: -1 })
-    } else {
-      this.brigade = brigade.slice(); // копируем массив
-      this.brigade.sort((a, b) => b.rating - a.rating); // сортируем по рейтингу
-      this.brigade.splice(3); // оставляем первые три объекта
-    }
-
+  constructor(private data: DataServiseService) {
   }
 
-
-
-
-  constructor() { }
-
   ngOnInit(): void {
+    this.data.getTopBrigade().subscribe((br) => {
+      this.brigade = br
+    });
+    this.data._getTopBrigade();
   }
 
 }

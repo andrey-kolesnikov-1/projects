@@ -1,0 +1,26 @@
+.compDiv {
+  border: 2px solid olivedrab;
+  padding: 5px;
+  background-color: rgba(23, 255, 51, 0.5);
+  margin-bottom: 8px;
+}
+
+.compDiv:hover {
+  background-color: rgba(23, 255, 51, 0.7);
+}
+
+.compDiv p {
+  font-size: larger;
+  margin: 0 0 5px 0;
+}
+
+.comment {
+  border: 1px solid cadetblue;
+  background-color: olive;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.userName {
+  margin: 0 0 5px 0;
+}

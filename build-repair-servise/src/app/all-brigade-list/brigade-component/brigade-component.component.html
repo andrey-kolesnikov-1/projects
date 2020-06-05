@@ -1,0 +1,30 @@
+<div class="compDiv">
+  <h2 style="text-align: center">{{brigade.name}}</h2>
+  <hr>
+  <div>
+    <h4 class="userName">Род производимых работ</h4>
+    <ul>
+      <li *ngFor="let i of brigade.specification">{{i}}</li>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <h4 class="userName">Примечания</h4>
+    <p>{{brigade.description}}</p>
+  </div>
+  <hr>
+  <div>
+    <h4 class="userName">Рейтинг</h4>
+    <p>{{brigade.rating}}</p>
+  </div>
+  <hr>
+
+  <div>
+    <h4 class="userName">Отзывы</h4>
+  <div class="comment" *ngFor="let i of brigade.reviews">
+    <h5 class="userName">{{i.userName}}</h5>
+    {{i.feedback}}
+  </div>
+
+  </div>
+</div>
