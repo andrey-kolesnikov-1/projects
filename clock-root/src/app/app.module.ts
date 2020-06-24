@@ -1,0 +1,24 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
+
+import { AppComponent } from './app.component';
+import { ClockComponent } from './clock/clock.component';
+import { ChildComponent } from './child/child.component';
+import { ClockV2Component } from './clock-v2/clock-v2.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ClockComponent,
+    ChildComponent,
+    ClockV2Component
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

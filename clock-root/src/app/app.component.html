@@ -1,0 +1,13 @@
+<div class="root">
+  <div class="mainDiv">
+    <h1 style="color:floralwhite">Текущее врямя</h1>
+    <app-clock></app-clock>
+  </div>
+  <br>
+  <app-child></app-child>
+  <br>
+  <app-clock-v2 
+  [rotateSec]="second" 
+  [rotateMin]="minut"
+  [rotateHour]="hour"></app-clock-v2>
+</div>
