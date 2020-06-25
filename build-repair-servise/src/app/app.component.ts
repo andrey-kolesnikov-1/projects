@@ -6,14 +6,13 @@ import { DataServiseService } from './servises/data-servise.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'build-repair-servise';
 
   constructor(private dataBrigade: DataServiseService) {
   }
 
   ngOnInit() {
-
   }
 
   addBrig() {
@@ -24,9 +23,7 @@ export class AppComponent implements OnInit{
       reviews: [{
         userName: 'Vasya',
         feedback: 'жопа'
-      },
-        {userName: 'Petya',
-        feedback: 'ofjiofhfv'}]
+      }]
     });
   }
 
